@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>快速連結</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f6f9;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 400px;
+      background: #ffffff;
+      padding: 32px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #0066cc;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn:hover {
+      background-color: #0052a3;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    /* 針對平版與桌面螢幕的響應式調整 */
+    @media (min-width: 600px) {
+      .container {
+        max-width: 600px;
+        flex-direction
