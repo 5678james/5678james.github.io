@@ -17,7 +17,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: #f4f6f9;
+      background-color: #fff0f3;
       padding: 20px;
     }
 
@@ -29,8 +29,9 @@
       max-width: 400px;
       background: #ffffff;
       padding: 32px 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(255, 117, 143, 0.15);
+      border: 1px solid #ffccd5;
     }
 
     .btn {
@@ -42,21 +43,42 @@
       text-align: center;
       text-decoration: none;
       color: #ffffff;
-      background-color: #0066cc;
-      border-radius: 8px;
-      transition: background-color 0.2s ease, transform 0.1s ease;
+      background-color: #ff758f;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 117, 143, 0.3);
+      transition: all 0.2s ease;
     }
 
     .btn:hover {
-      background-color: #0052a3;
+      background-color: #ff4d6d;
+      box-shadow: 0 6px 14px rgba(255, 77, 109, 0.4);
+      transform: translateY(-2px);
     }
 
     .btn:active {
-      transform: scale(0.98);
+      transform: translateY(0) scale(0.98);
     }
 
-    /* 針對平版與桌面螢幕的響應式調整 */
+    /* 針對平板與桌面螢幕的響應式調整 */
     @media (min-width: 600px) {
       .container {
         max-width: 600px;
-        flex-direction
+        flex-direction: row;
+      }
+
+      .btn {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="https://whole-reply-seizing.ngrok-free.dev/form/0dddff34-1304-47c5-8514-83ab2aee79c0" target="_blank" rel="noopener noreferrer" class="btn">同步</a>
+    <a href="https://docs.google.com/spreadsheets/d/11o6rCVZ_09NzujWvJJL2J36j1g_FbS30nFGkhyWdd4Q/edit?gid=447368645#gid=447368645" target="_blank" rel="noopener noreferrer" class="btn">設定</a>
+    <a href="https://kentaitwds2.github.io/off_days_viewer.html" target="_blank" rel="noopener noreferrer" class="btn">測試</a>
+  </div>
+
+</body>
+</html>
